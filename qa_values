@@ -1,7 +1,7 @@
 region = "us-east-2"
 
-cluster_subnet_ids = ["subnet-0315835078dadf1c3", "subnet-046104d7a49595827", "subnet-07c780cfc6554354d"]
-node_group_subnet_ids = ["subnet-0315835078dadf1c3", "subnet-046104d7a49595827", "subnet-07c780cfc6554354d"]
+cluster_subnet_ids = ["subnet-xxx", "subnet-xxx", "subnet-xxx"]
+node_group_subnet_ids = ["subnet-xxx", "subnet-xxx", "subnet-xxx"]
 
 eks_cluster_name = "terraform-testing-cluster"
 node_group_name  = "terraform-testing-nodegroup"
