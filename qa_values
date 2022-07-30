@@ -1,0 +1,20 @@
+region = "us-east-2"
+
+cluster_subnet_ids = ["subnet-0315835078dadf1c3", "subnet-046104d7a49595827", "subnet-07c780cfc6554354d"]
+node_group_subnet_ids = ["subnet-0315835078dadf1c3", "subnet-046104d7a49595827", "subnet-07c780cfc6554354d"]
+
+eks_cluster_name = "terraform-testing-cluster"
+node_group_name  = "terraform-testing-nodegroup"
+
+eks_node_desired_size = 3
+eks_node_min_size = 3
+eks_node_max_size = 3
+eks_node_max_unavailable = 3
+instance_types = ["r5a.2xlarge"]
+
+
+eks_cluster_policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
+eks_vpc_controller_policy_arn = "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
+eks_worker_node_policy_arn = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
+eks_cni_policy_arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
+container_registry_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
